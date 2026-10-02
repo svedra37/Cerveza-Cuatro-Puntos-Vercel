@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cuatro Puntos — Cervecería Artesanal · Conkal, Yucatán</title>
+<meta name="description" content="Cuatro Puntos: cervecería artesanal en Conkal, Yucatán. Cerveza elaborada con métodos tradicionales — Clara, Ámbar y Oscura. Pide la tuya por WhatsApp." />
+
+<link rel="icon" href="assets/img/logo.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css?v=20260927" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" data-cursor aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<div class="splash" data-splash aria-hidden="true">
+  <div class="splash-mark">
+    <img src="assets/img/logo.jpg" alt="" />
+  </div>
+</div>
+
+<header class="nav" data-nav>
+  <a href="#top" class="nav-brand">
+    <span class="nav-logo"><img src="assets/img/logo.jpg" alt="Cuatro Puntos" /></span>
+    <span class="nav-word">Cuatro Puntos</span>
+  </a>
+
+  <nav class="nav-links" data-nav-links>
+    <a href="#historia" data-i18n="nav.historia">Historia</a>
+    <a href="#variedades" data-i18n="nav.variedades">Variedades</a>
+    <a href="#proceso" data-i18n="nav.proceso">Proceso</a>
+    <a href="#yucatan" data-i18n="nav.yucatan">Yucatán</a>
+    <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="lang-toggle" data-lang-toggle type="button" aria-label="Cambiar idioma / Switch language">ES / EN</button>
+    <a class="btn btn-primary btn-sm" data-whatsapp-link target="_blank" rel="noopener">
+      <span data-i18n="hero.ctaPrimary">Pedir por WhatsApp</span>
+    </a>
+  </div>
+
+  <button class="nav-burger" data-burger type="button" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/img/dock-sunset-glass.jpg" alt="Cerveza Cuatro Puntos frente al mar al atardecer" />
+      <div class="hero-bg-tint"></div>
+    </div>
+    <div class="hero-mesh" aria-hidden="true"></div>
+    <div class="hero-inner reveal" data-reveal>
+      <p class="kicker" data-i18n="hero.kicker">Cervecería Artesanal · Conkal, Yucatán</p>
+      <h1 class="hero-title">
+        <span data-i18n="hero.title1">Cuatro</span>
+        <span class="hero-title-accent" data-i18n="hero.title2">Puntos</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">Cerveza artesanal elaborada con métodos tradicionales, tiempo y paciencia, en el corazón de Yucatán.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" data-whatsapp-link target="_blank" rel="noopener">
+          <span data-i18n="hero.ctaPrimary">Pedir por WhatsApp</span>
+        </a>
+        <a class="btn btn-ghost" href="#variedades" data-i18n="hero.ctaSecondary">Ver variedades</a>
+      </div>
+    </div>
+    <div class="hero-scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" data-marquee-track>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+      <span>MALTA</span><span>·</span><span>LÚPULO</span><span>·</span><span>LEVADURA</span><span>·</span><span>TRADICIÓN</span><span>·</span><span>YUCATÁN</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- HISTORIA -->
+  <section class="section historia" id="historia">
+    <div class="section-halo" aria-hidden="true"></div>
+    <div class="container historia-grid">
+      <div class="historia-side reveal" data-reveal>
+        <p class="kicker" data-i18n="historia.kicker">01 · Nuestra historia</p>
+        <h2 class="section-title" data-i18n="historia.title">Una cervecería pequeña, con raíces profundas.</h2>
+      </div>
+      <div class="historia-body">
+        <p class="body-text reveal" data-reveal data-i18n="historia.p1">Cuatro Puntos es una pequeña cervecería artesanal ubicada en la villa de Conkal, Yucatán. Elaboramos nuestra cerveza utilizando los métodos tradicionales, respetando los tiempos que cada receta necesita y cuidando cada lote como si fuera el primero.</p>
+        <p class="body-text reveal" data-reveal data-i18n="historia.p2">No buscamos producir en masa: buscamos producir bien. Cada botella sale de nuestras manos después de semanas de maceración, cocción y fermentación controlada, honrando técnicas cerveceras transmitidas y perfeccionadas por generaciones.</p>
+        <p class="body-text reveal" data-reveal data-i18n="historia.p3">El nombre "Cuatro Puntos" honra los cuatro pilares de este néctar: agua, malta, lúpulo y levadura — y los cuatro rumbos que, según la cosmovisión maya, dan equilibrio a la tierra yucateca que nos vio nacer.</p>
+
+        <div class="stats-row" data-stats>
+          <div class="stat reveal" data-reveal>
+            <span class="stat-num" data-count-to="4">0</span>
+            <span class="stat-label" data-i18n="historia.stat1">Ingredientes naturales</span>
+          </div>
+          <div class="stat reveal" data-reveal>
+            <span class="stat-num"><span data-count-to="100">0</span>%</span>
+            <span class="stat-label" data-i18n="historia.stat2">Elaboración artesanal</span>
+          </div>
+          <div class="stat reveal" data-reveal>
+            <span class="stat-num"><span data-count-to="5">0</span>%</span>
+            <span class="stat-label" data-i18n="historia.stat3">Vol. de alcohol</span>
+          </div>
+          <div class="stat reveal" data-reveal>
+            <span class="stat-num"><span data-count-to="355">0</span>ml</span>
+            <span class="stat-label" data-i18n="historia.stat4">Presentación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POUR / SIGNATURE EFFECT -->
+  <section class="pour" id="pour">
+    <div class="pour-bg">
+      <img src="assets/img/dark-glass-closeup.jpg" alt="Detalle de cerveza Cuatro Puntos serviéndose en copa" />
+    </div>
+    <div class="pour-inner">
+      <p class="kicker kicker-light reveal" data-reveal data-i18n="pour.kicker">02 · El detalle</p>
+      <h2 class="pour-title" data-i18n="pour.title">Elaborada con tiempo.<br>Servida con orgullo.</h2>
+      <div class="pour-gauge" aria-hidden="true">
+        <div class="pour-gauge-fill" data-pour-fill></div>
+      </div>
+      <p class="pour-sub reveal" data-reveal data-i18n="pour.sub">Sin prisas. Sin atajos. Solo cuatro ingredientes y la paciencia de dejar que la fermentación haga su trabajo.</p>
+    </div>
+  </section>
+
+  <!-- MOMENTOS (video) -->
+  <section class="section momentos" id="momentos">
+    <div class="container">
+      <div class="section-head reveal" data-reveal>
+        <p class="kicker" data-i18n="momentos.kicker">03 · En movimiento</p>
+        <h2 class="section-title" data-i18n="momentos.title">Así se disfruta, donde sea.</h2>
+      </div>
+
+      <div class="reel-grid">
+        <figure class="reel-card reveal" data-reveal>
+          <video class="reel-video" src="assets/video/bottles-beach.mp4" poster="assets/img/poster-bottles-beach.jpg"
+                 autoplay muted loop playsinline preload="auto"></video>
+          <figcaption data-i18n="momentos.item1.caption">Con los pies en la arena.</figcaption>
+        </figure>
+        <figure class="reel-card reveal" data-reveal>
+          <video class="reel-video" src="assets/video/pour-glass.mp4" poster="assets/img/poster-pour-glass.jpg"
+                 autoplay muted loop playsinline preload="auto"></video>
+          <figcaption data-i18n="momentos.item2.caption">Se sirve con calma.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- VARIEDADES -->
+  <section class="section variedades" id="variedades">
+    <div class="container">
+      <div class="section-head reveal" data-reveal>
+        <p class="kicker" data-i18n="variedades.kicker">04 · Nuestras cervezas</p>
+        <h2 class="section-title" data-i18n="variedades.title">Tres caracteres. Un mismo oficio.</h2>
+      </div>
+
+      <div class="variety-grid" data-variety-grid>
+        <article class="variety-card reveal" data-reveal data-tilt>
+          <div class="variety-media">
+            <img src="assets/img/two-labels-clara-oscura.jpg" alt="Cerveza artesanal Cuatro Puntos Clara" />
+          </div>
+          <div class="variety-body">
+            <div class="variety-head">
+              <h3>Clara</h3>
+              <span class="variety-abv">5% ALC. VOL.</span>
+            </div>
+            <p data-i18n="variedades.item1.desc">Ligera y refrescante, de cuerpo suave con notas maltosas y un final limpio. La puerta de entrada perfecta al mundo artesanal.</p>
+          </div>
+        </article>
+
+        <article class="variety-card reveal" data-reveal data-tilt>
+          <div class="variety-media">
+            <img src="assets/img/warm-glass-ambar.jpg" alt="Cerveza artesanal Cuatro Puntos Ámbar" />
+          </div>
+          <div class="variety-body">
+            <div class="variety-head">
+              <h3>Ámbar</h3>
+              <span class="variety-abv">5% ALC. VOL.</span>
+            </div>
+            <p data-i18n="variedades.item2.desc">Cuerpo medio y color cobrizo, con notas a caramelo tostado equilibradas por un lúpulo sutil. Compleja sin dejar de ser fácil de beber.</p>
+          </div>
+        </article>
+
+        <article class="variety-card reveal" data-reveal data-tilt>
+          <div class="variety-media">
+            <img src="assets/img/case-bottles-oscura.jpg" alt="Cerveza artesanal Cuatro Puntos Oscura" />
+          </div>
+          <div class="variety-body">
+            <div class="variety-head">
+              <h3>Oscura</h3>
+              <span class="variety-abv">5% ALC. VOL.</span>
+            </div>
+            <p data-i18n="variedades.item3.desc">Robusta y profunda, con notas a café tostado, chocolate amargo y un toque ahumado. Para quien busca carácter en cada trago.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section proceso" id="proceso">
+    <div class="container">
+      <div class="section-head reveal" data-reveal>
+        <p class="kicker" data-i18n="proceso.kicker">05 · Proceso artesanal</p>
+        <h2 class="section-title" data-i18n="proceso.title">De la malta a la botella.</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step reveal" data-reveal>
+          <span class="step-n">01</span>
+          <div class="step-body">
+            <h3 data-i18n="proceso.step1.name">Maceración</h3>
+            <p data-i18n="proceso.step1.desc">La malta molida se mezcla con agua caliente para liberar los azúcares fermentables. De aquí nace el mosto, la base dulce de toda cerveza.</p>
+          </div>
+        </li>
+        <li class="step reveal" data-reveal>
+          <span class="step-n">02</span>
+          <div class="step-body">
+            <h3 data-i18n="proceso.step2.name">Cocción</h3>
+            <p data-i18n="proceso.step2.desc">El mosto se hierve y se incorpora el lúpulo, que aporta amargor, aroma y actúa como conservador natural.</p>
+          </div>
+        </li>
+        <li class="step reveal" data-reveal>
+          <span class="step-n">03</span>
+          <div class="step-body">
+            <h3 data-i18n="proceso.step3.name">Fermentación</h3>
+            <p data-i18n="proceso.step3.desc">La levadura transforma los azúcares en alcohol y CO₂ durante días de reposo a temperatura controlada. Aquí nace el carácter de cada receta.</p>
+          </div>
+        </li>
+        <li class="step reveal" data-reveal>
+          <span class="step-n">04</span>
+          <div class="step-body">
+            <h3 data-i18n="proceso.step4.name">Maduración</h3>
+            <p data-i18n="proceso.step4.desc">La cerveza reposa el tiempo necesario para redondear sabores y afinar su cuerpo, sin prisas ni procesos acelerados.</p>
+          </div>
+        </li>
+        <li class="step reveal" data-reveal>
+          <span class="step-n">05</span>
+          <div class="step-body">
+            <h3 data-i18n="proceso.step5.name">Envasado</h3>
+            <p data-i18n="proceso.step5.desc">Cada botella se llena, corona y etiqueta a mano, lote por lote, cuidando que llegue a tu mesa en su mejor momento.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- YUCATAN GALLERY -->
+  <section class="section yucatan" id="yucatan">
+    <div class="container yucatan-grid">
+      <div class="yucatan-text reveal" data-reveal>
+        <p class="kicker" data-i18n="yucatan.kicker">06 · Nuestra tierra</p>
+        <h2 class="section-title" data-i18n="yucatan.title">Hecha en Yucatán, para el mundo.</h2>
+        <p class="body-text" data-i18n="yucatan.p">Conkal es un pueblo pequeño de tradición henequenera, a minutos de Mérida. Ahí, entre el calor y la calma yucateca, elaboramos cada lote de Cuatro Puntos con la misma calma con la que crece la tierra que nos rodea.</p>
+      </div>
+      <div class="yucatan-mosaic">
+        <div class="mosaic-item mosaic-tall reveal" data-reveal>
+          <img src="assets/img/beach-palms-day.jpg" alt="Cerveza Cuatro Puntos entre palmeras de Yucatán" loading="lazy" />
+        </div>
+        <div class="mosaic-item reveal" data-reveal>
+          <img src="assets/img/leaves-bottle.jpg" alt="Botella de cerveza Cuatro Puntos entre plantas" loading="lazy" />
+        </div>
+        <div class="mosaic-item reveal" data-reveal>
+          <img src="assets/img/hero-beach-hand.jpg" alt="Mano sosteniendo cerveza Cuatro Puntos frente al mar" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO / CTA -->
+  <section class="section contacto" id="contacto">
+    <div class="section-halo section-halo-2" aria-hidden="true"></div>
+    <div class="container contacto-inner">
+      <p class="kicker kicker-light reveal" data-reveal data-i18n="contacto.kicker">07 · Pide la tuya</p>
+      <h2 class="contacto-title reveal" data-reveal data-i18n="contacto.title">¿Se te antoja una Cuatro Puntos?</h2>
+      <p class="contacto-sub reveal" data-reveal data-i18n="contacto.sub">Escríbenos por WhatsApp y te decimos qué tenemos disponible hoy.</p>
+      <a class="btn btn-primary btn-lg reveal" data-reveal data-whatsapp-link target="_blank" rel="noopener">
+        <span data-i18n="contacto.ctaWhatsapp">Pedir por WhatsApp</span>
+      </a>
+
+      <div class="social-row reveal" data-reveal>
+        <span class="social-label" data-i18n="contacto.social">Síguenos</span>
+        <a href="https://www.instagram.com/cerveza4puntos?stkn=OG9ydjh3eGdlaW1v" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/share/1DaSQEjrCS/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="nav-logo"><img src="assets/img/logo.jpg" alt="Cuatro Puntos" /></span>
+      <span class="nav-word">Cuatro Puntos</span>
+    </div>
+    <p class="footer-made" data-i18n="footer.made">Elaborada a mano en Conkal, Yucatán.</p>
+    <p class="footer-rights">© <span data-year>2026</span> Cuatro Puntos. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+  </div>
+</footer>
+
+<a class="wa-float" data-whatsapp-link target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor" aria-hidden="true">
+    <path d="M16 3C9 3 3.4 8.6 3.4 15.6c0 2.5.7 4.8 1.9 6.8L3 29l6.8-2.2c2 1.1 4.3 1.7 6.6 1.7 7 0 12.6-5.6 12.6-12.6C29 8.6 23 3 16 3zm7.4 17.9c-.3.9-1.7 1.7-2.4 1.8-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.6-6-5.2-6.2-5.4-.2-.2-1.5-2-1.5-3.8s1-2.7 1.3-3c.3-.3.7-.4 1-.4h.7c.2 0 .5 0 .8.6.3.7 1 2.4 1.1 2.6.1.2.2.4 0 .7-.1.2-.2.4-.4.6-.2.2-.4.5-.6.6-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.4.2.6.1.8-.1.2-.2.9-1 1.1-1.4.2-.4.5-.3.8-.2.3.1 2 1 2.4 1.1.4.2.6.3.7.4.1.2.1 1-.2 1.9z"/>
+  </svg>
+</a>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js"></script>
+<script defer src="main.js?v=20260927"></script>
+</body>
+</html>
