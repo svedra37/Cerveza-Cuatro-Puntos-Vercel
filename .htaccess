@@ -1,3 +1,6 @@
+# ----- Custom 404 page -----
+ErrorDocument 404 /404.html
+
 # ============================================================================
 # .htaccess for premium static websites — copy as `.htaccess` to project root.
 # Targets Apache (Hostinger default) and LiteSpeed.
@@ -60,6 +63,8 @@
   # Minimal security headers
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
 </IfModule>
 
 # ----- Correct MIME types (some shared hosts default wrong) -----
@@ -73,6 +78,7 @@
   AddType font/woff2 .woff2
   AddType font/woff .woff
   AddType image/svg+xml .svg
+  AddType image/x-icon .ico
 </IfModule>
 
 # ----- Gzip compression for text assets -----

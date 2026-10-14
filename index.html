@@ -4,27 +4,28 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Cuatro Puntos — Cervecería Artesanal · Conkal, Yucatán</title>
-<meta name="description" content="Cuatro Puntos: cervecería artesanal en Conkal, Yucatán. Cerveza elaborada con métodos tradicionales — Ámbar y Oscura. Pide la tuya por WhatsApp." />
+<meta name="description" content="Cuatro Puntos: cervecería artesanal en Conkal, Yucatán. Cerveza elaborada con métodos tradicionales — Clara y Oscura. Pide la tuya por WhatsApp." />
 
 <meta name="theme-color" content="#060605" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="es_MX" />
 <meta property="og:title" content="Cuatro Puntos — Cervecería Artesanal · Conkal, Yucatán" />
-<meta property="og:description" content="Cerveza artesanal elaborada con métodos tradicionales en Conkal, Yucatán. Ámbar y Oscura." />
+<meta property="og:description" content="Cerveza artesanal elaborada con métodos tradicionales en Conkal, Yucatán. Clara y Oscura." />
 
-<link rel="icon" href="assets/img/logo.jpg" />
+<link rel="icon" href="favicon.ico" sizes="48x48" />
+<link rel="icon" href="assets/img/icon-192.png" type="image/png" sizes="192x192" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="preload" as="image" href="assets/img/hero-foam-poster.jpg" fetchpriority="high" />
 <link rel="preload" as="image" href="assets/img/title-cuatro-puntos.png" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/cinzel-latin.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin />
 
 <script>
 document.documentElement.classList.add("js");
 try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592e6) document.documentElement.classList.add("age-ok"); } catch (e) {}
 </script>
-<link rel="stylesheet" href="styles.css?v=20261034" />
+<link rel="stylesheet" href="styles.css?v=20261072" />
 </head>
 <body>
 
@@ -32,11 +33,11 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
 
 <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-title" aria-describedby="age-text" data-age-gate>
   <div class="age-gate-inner">
-    <span class="age-logo"><img src="assets/img/logo.jpg" alt="Cuatro Puntos" /></span>
+    <span class="age-logo"><img src="assets/img/logo-badge.png" alt="Cuatro Puntos" width="512" height="512" /></span>
     <p class="age-brand">Cuatro Puntos</p>
 
     <div class="age-ask" data-age-ask>
-      <h2 class="age-title" id="age-title" data-i18n="age.title">¿Eres mayor de 18 años?</h2>
+      <p class="age-title" id="age-title" data-i18n="age.title">¿Eres mayor de 18 años?</p>
       <p class="age-text" id="age-text" data-i18n="age.text">Este sitio promueve bebidas alcohólicas y está dirigido exclusivamente a personas mayores de edad.</p>
       <div class="age-actions">
         <button class="btn btn-primary btn-lg" type="button" data-age-yes data-i18n="age.yes">Sí</button>
@@ -61,13 +62,13 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
 
 <div class="splash" data-splash aria-hidden="true">
   <div class="splash-mark">
-    <img src="assets/img/logo.jpg" alt="" />
+    <img src="assets/img/logo-badge.png" alt="" width="512" height="512" />
   </div>
 </div>
 
 <header class="nav" data-nav>
   <a href="#top" class="nav-brand">
-    <span class="nav-logo"><img src="assets/img/logo.jpg" alt="" /></span>
+    <span class="nav-logo"><img src="assets/img/logo-badge.png" alt="" width="512" height="512" /></span>
     <img class="nav-title" src="assets/img/title-cuatro-puntos-linea.png" alt="Cuatro Puntos" width="3024" height="200" decoding="async" />
   </a>
 
@@ -112,6 +113,7 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
       </div>
     </div>
     <div class="hero-scroll-cue" aria-hidden="true"><span></span></div>
+    <button type="button" class="motion-btn motion-btn-hero" data-motion-toggle="hero" aria-pressed="false" aria-label="Pausar video de fondo"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg></button>
   </section>
 
   <!-- MARQUEE -->
@@ -177,16 +179,19 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
 
   <!-- POUR / SIGNATURE EFFECT -->
   <section class="pour" id="pour">
-    <div class="pour-bg">
-      <img src="assets/img/amber-glass-marble.jpg" alt="Detalle de cerveza Cuatro Puntos serviéndose en copa" loading="lazy" decoding="async" />
-    </div>
-    <div class="pour-inner">
-      <p class="kicker kicker-light reveal" data-reveal data-i18n="pour.kicker">El detalle</p>
-      <h2 class="pour-title" data-i18n="pour.title">Elaborada con tiempo.<br>Servida con orgullo.</h2>
-      <div class="pour-gauge" aria-hidden="true">
-        <div class="pour-gauge-fill" data-pour-fill></div>
+    <div class="pour-glow" aria-hidden="true"></div>
+    <div class="pour-grid">
+      <div class="pour-inner">
+        <p class="kicker kicker-light reveal" data-reveal data-i18n="pour.kicker">El detalle</p>
+        <h2 class="pour-title" data-i18n="pour.title">Elaborada con tiempo.<br>Servida con orgullo.</h2>
+        <div class="pour-gauge" aria-hidden="true">
+          <div class="pour-gauge-fill" data-pour-fill></div>
+        </div>
+        <p class="pour-sub reveal" data-reveal data-i18n="pour.sub">Sin prisas, sin atajos. Solo cuatro ingredientes y la paciencia de dejar que la fermentación haga su trabajo.</p>
       </div>
-      <p class="pour-sub reveal" data-reveal data-i18n="pour.sub">Sin prisas. Sin atajos. Solo cuatro ingredientes y la paciencia de dejar que la fermentación haga su trabajo.</p>
+      <div class="pour-visual reveal" data-reveal>
+        <img src="assets/img/detalle-clara.webp" alt="Botella de cerveza Clara de Cuatro Puntos sobre un círculo de maltas y lúpulos" width="896" height="1200" loading="lazy" decoding="async" />
+      </div>
     </div>
   </section>
 
@@ -198,30 +203,44 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
         <h2 class="section-title" data-i18n="variedades.title">Caracteres que nos definen.</h2>
       </div>
 
-      <div class="variety-grid" data-variety-grid>
-        <article class="variety-card reveal" data-reveal data-tilt>
-          <div class="variety-media">
-            <img class="ui-crop" src="assets/img/amber-glass-marble.jpg" alt="Cerveza artesanal Cuatro Puntos Ámbar servida en copa junto a su botella" loading="lazy" decoding="async" />
+      <div class="variety-list">
+        <article class="variety" data-reveal>
+          <div class="variety-bottle">
+            <img src="assets/img/clara-botella.webp" alt="Botella de cerveza artesanal Cuatro Puntos Clara" width="250" height="860" loading="lazy" decoding="async" />
           </div>
-          <div class="variety-body">
-            <div class="variety-head">
-              <h3>Ámbar</h3>
-              <span class="variety-abv">4.5% – 5% ALC. VOL.</span>
-            </div>
-            <p data-i18n="variedades.item1.desc">Cuerpo medio y color cobrizo, con notas a caramelo tostado equilibradas con un lúpulo cítrico. Compleja sin dejar de ser refrescante y fácil de beber.</p>
+          <div class="variety-info">
+            <h3 class="v-step">Clara</h3>
+            <p class="variety-style v-step" data-i18n="variedades.style">Cerveza artesanal</p>
+            <span class="v-rule" aria-hidden="true"></span>
+            <ul class="variety-notes">
+              <li class="v-step" data-i18n="variedades.item1.n1">Cuerpo medio y color cobrizo, con notas a caramelo tostado equilibradas con un lúpulo cítrico.</li>
+              <li class="v-step" data-i18n="variedades.item1.n2">Compleja sin dejar de ser refrescante y fácil de beber.</li>
+            </ul>
+            <span class="v-rule" aria-hidden="true"></span>
+            <dl class="variety-specs">
+              <div class="v-step"><dt data-i18n="variedades.abvLabel">Alc. vol.</dt><dd><span data-count-to="4.5" data-decimals="1" data-duration="1800">4.5</span>% – <span data-count-to="5" data-duration="1800">5</span>%</dd></div>
+              <div class="v-step"><dt data-i18n="variedades.sizeLabel">Presentación</dt><dd data-i18n="variedades.format">Botella 355 ml</dd></div>
+            </dl>
           </div>
         </article>
 
-        <article class="variety-card reveal" data-reveal data-tilt>
-          <div class="variety-media">
-            <img class="ui-crop" src="assets/img/oscura-pier-sunset.jpg" alt="Cerveza artesanal Cuatro Puntos Oscura servida en copa junto a su botella, frente al muelle" loading="lazy" decoding="async" />
+        <article class="variety" data-reveal>
+          <div class="variety-bottle">
+            <img src="assets/img/oscura-botella.webp" alt="Botella de cerveza artesanal Cuatro Puntos Oscura" width="250" height="860" loading="lazy" decoding="async" />
           </div>
-          <div class="variety-body">
-            <div class="variety-head">
-              <h3>Oscura</h3>
-              <span class="variety-abv">5.5% – 6.5% ALC. VOL.</span>
-            </div>
-            <p data-i18n="variedades.item2.desc">Robusta y profunda, con notas a café tostado, chocolate amargo y un toque ahumado. Para quien busca carácter en cada trago.</p>
+          <div class="variety-info">
+            <h3 class="v-step">Oscura</h3>
+            <p class="variety-style v-step" data-i18n="variedades.style">Cerveza artesanal</p>
+            <span class="v-rule" aria-hidden="true"></span>
+            <ul class="variety-notes">
+              <li class="v-step" data-i18n="variedades.item2.n1">Robusta y profunda, con notas a café tostado, chocolate amargo y un toque ahumado.</li>
+              <li class="v-step" data-i18n="variedades.item2.n2">Para quien busca carácter en cada trago.</li>
+            </ul>
+            <span class="v-rule" aria-hidden="true"></span>
+            <dl class="variety-specs">
+              <div class="v-step"><dt data-i18n="variedades.abvLabel">Alc. vol.</dt><dd><span data-count-to="5.5" data-decimals="1" data-duration="1800">5.5</span>% – <span data-count-to="6.5" data-decimals="1" data-duration="1800">6.5</span>%</dd></div>
+              <div class="v-step"><dt data-i18n="variedades.sizeLabel">Presentación</dt><dd data-i18n="variedades.format">Botella 355 ml</dd></div>
+            </dl>
           </div>
         </article>
       </div>
@@ -236,6 +255,14 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
         <h2 class="section-title" data-i18n="proceso.title">De la malta a la botella.</h2>
       </div>
 
+      <div class="proceso-layout">
+      <figure class="proceso-media reveal" data-reveal>
+        <div class="proceso-frame">
+          <video class="proceso-video" data-proceso-video data-src="assets/video/proceso.mp4" poster="assets/img/proceso-poster.webp" muted loop playsinline preload="none" disablepictureinpicture aria-label="Proceso artesanal: molienda, maceración y cocción" width="576" height="1024"></video>
+          <span class="proceso-vignette" aria-hidden="true"></span>
+          <button type="button" class="motion-btn motion-btn-frame" data-motion-toggle="proceso" aria-pressed="false" aria-label="Pausar video"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg></button>
+        </div>
+      </figure>
       <ol class="steps" data-steps>
         <li class="step reveal" data-reveal>
           <span class="step-n">01</span>
@@ -273,6 +300,7 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
           </div>
         </li>
       </ol>
+      </div>
     </div>
   </section>
 
@@ -304,17 +332,27 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
           </li>
         </ul>
       </div>
-      <div class="donde-mosaic">
-        <div class="mosaic-item mosaic-tall reveal" data-reveal>
-          <img src="assets/img/beach-palms-day.jpg" alt="Cerveza Cuatro Puntos entre palmeras de Yucatán" loading="lazy" decoding="async" />
-        </div>
-        <div class="mosaic-item reveal" data-reveal>
-          <img src="assets/img/leaves-bottle.jpg" alt="Botella de cerveza Cuatro Puntos entre plantas" loading="lazy" decoding="async" />
-        </div>
-        <div class="mosaic-item reveal" data-reveal>
-          <img class="ui-crop" src="assets/img/hero-beach-hand.jpg" alt="Mano sosteniendo cerveza Cuatro Puntos frente al mar" loading="lazy" decoding="async" />
-        </div>
-      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA / CARRUSEL -->
+  <section class="gallery" aria-label="Galería de fotografías" data-gallery>
+    <button type="button" class="motion-btn motion-btn-gallery" data-motion-toggle="gallery" aria-pressed="false" aria-label="Pausar carrusel"><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg></button>
+    <div class="gallery-viewport" data-gallery-viewport tabindex="0">
+      <ul class="gallery-track" data-gallery-track>
+        <li class="gallery-item"><img src="assets/img/carrusel/c01.webp" width="675" alt="Botella Cuatro Puntos junto a una copa y botana frente a la alberca" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c02.webp" width="734" alt="Botella Cuatro Puntos entre hojas tropicales" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c03.webp" width="731" alt="Botella Cuatro Puntos en mano frente a palmeras y mar" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c04.webp" width="1200" alt="Cuatro botellas Cuatro Puntos, Oscura y Clara" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c05.webp" width="675" alt="Botellas Cuatro Puntos sobre una mesa de madera" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c06.webp" width="675" alt="Cuatro Puntos Oscura servida en copa junto al agua" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c07.webp" width="768" alt="Botella y copa Cuatro Puntos sobre un tronco" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c08.webp" width="675" alt="Cuatro Puntos Clara servida en copa de noche" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c09.webp" width="675" alt="Botella ámbar al atardecer junto a un vaso de cerveza oscura" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c10.webp" width="1200" alt="Botella Cuatro Puntos con botana junto a la alberca" height="900" loading="lazy" decoding="async" /></li>
+              <li class="gallery-item"><img src="assets/img/carrusel/c11.webp" width="672" alt="Mano sosteniendo una botella Cuatro Puntos Oscura frente al mar" height="900" loading="lazy" decoding="async" /></li>
+        <li class="gallery-item"><img src="assets/img/carrusel/c12.webp" width="745" alt="Cuatro Puntos Oscura servida en copa junto a la botella frente al muelle" height="900" loading="lazy" decoding="async" /></li>
+      </ul>
     </div>
   </section>
 
@@ -331,7 +369,7 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
 
       <div class="social-row reveal" data-reveal>
         <span class="social-label" data-i18n="contacto.social">Síguenos</span>
-        <a href="https://www.instagram.com/cerveza4puntos?stkn=OG9ydjh3eGdlaW1v" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://www.instagram.com/cerveza4puntos" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
         <a href="https://www.facebook.com/share/1DaSQEjrCS/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
       </div>
     </div>
@@ -339,15 +377,25 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
 
 </main>
 
+<div class="cookie-banner" data-cookie-banner role="dialog" aria-modal="false" aria-labelledby="cookie-title" aria-describedby="cookie-text" hidden>
+  <p class="cookie-title" id="cookie-title" data-i18n="cookies.title">Cookies y privacidad</p>
+  <p class="cookie-text" id="cookie-text" data-i18n="cookies.text">Usamos cookies analíticas para entender cómo se usa el sitio y mejorarlo. Solo se activan si las aceptas.</p>
+  <p class="cookie-more"><a href="aviso-privacidad.html" data-i18n="cookies.more">Aviso de privacidad</a></p>
+  <div class="cookie-actions">
+    <button type="button" class="cookie-btn cookie-btn-ghost" data-cookie-reject data-i18n="cookies.reject">Rechazar</button>
+    <button type="button" class="cookie-btn cookie-btn-primary" data-cookie-accept data-i18n="cookies.accept">Aceptar</button>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <span class="nav-logo"><img src="assets/img/logo.jpg" alt="Cuatro Puntos" /></span>
+      <span class="nav-logo"><img src="assets/img/logo-badge.png" alt="Cuatro Puntos" width="512" height="512" /></span>
       <span class="nav-word">Cuatro Puntos</span>
     </div>
     <p class="footer-made" data-i18n="footer.made">Elaborada a mano en Conkal, Yucatán.</p>
     <p class="footer-legal"><span data-i18n="legal.abuse">El abuso en el consumo de este producto es nocivo para la salud.</span> <span data-i18n="legal.minors">Prohibida su venta a menores de edad.</span> <span data-i18n="legal.responsible">Disfruta con responsabilidad. Si bebes, no manejes.</span></p>
-    <p class="footer-rights">© <span data-year>2026</span> Cuatro Puntos. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+    <p class="footer-rights">© <span data-year>2026</span> Cuatro Puntos. <span data-i18n="footer.rights">Todos los derechos reservados.</span> <a class="cookie-manage" href="aviso-privacidad.html" data-i18n="footer.privacy">Aviso de privacidad</a> <button type="button" class="cookie-manage" data-cookie-open data-i18n="cookies.manage">Preferencias de cookies</button></p>
   </div>
 </footer>
 
@@ -358,6 +406,6 @@ try { var t = +localStorage.getItem("cp_age_ok"); if (t && Date.now() - t < 2592
 </a>
 
 <script defer src="lib/manifest.js"></script>
-<script defer src="main.js?v=20261034"></script>
+<script defer src="main.js?v=20261072"></script>
 </body>
 </html>
